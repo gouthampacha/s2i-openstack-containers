@@ -1,0 +1,8 @@
+# The data service mounts source/destination shares (NFS, CIFS, native
+# CephFS) to copy data during share migration and backup/restore
+# (manila/data/helper.py, manila/data/drivers/nfs.py); these packages
+# provide the mount(8) helpers it shells out to via rootwrap.
+nfs-utils
+cifs-utils
+# Native CephFS mount helper (also used by manila-share's CephFS driver)
+ceph-common
