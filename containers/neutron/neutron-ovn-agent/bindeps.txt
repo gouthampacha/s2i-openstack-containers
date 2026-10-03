@@ -20,3 +20,6 @@ keepalived
 # Container runtime used to manage per-namespace agent helper processes
 podman
 libseccomp
+# Required for lxml
+libxml2
+libxslt

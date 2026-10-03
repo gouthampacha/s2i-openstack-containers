@@ -8,3 +8,6 @@ python3-pip
 python3-cryptography-43.0.0-4.el10
 # VF link state management (ip link set ... vf ...)
 iproute
+# Required for lxml
+libxml2
+libxslt

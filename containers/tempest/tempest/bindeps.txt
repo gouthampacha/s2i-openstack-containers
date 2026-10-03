@@ -21,3 +21,6 @@ nmap
 git-core
 # For extracting timing data archives (TEMPEST_TIMING_DATA_URL)
 tar
+# Required for lxml
+libxml2
+libxslt

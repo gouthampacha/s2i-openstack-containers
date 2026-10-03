@@ -18,7 +18,9 @@ packages:
   - git-core
   - httpd
   - libffi-devel
+  - libxml2
   - libxml2-devel
+  - libxslt
   - libxslt-devel
   - lvm2
   - mod_ssl

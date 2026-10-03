@@ -24,6 +24,7 @@
       rebuilds, and add related required projects.
     timeout: 7200
     nodeset: s2i-openstack-containers-image-builder
+    semaphores: s2i-builder
     required-projects:
       - github.com/openstack-k8s-operators/s2i-openstack-containers
       - opendev.org/zuul/zuul-jobs
@@ -167,10 +168,12 @@
       # content provider job (the s2i one), and not the operator one,
       # which would set this value.
       content_provider_registry_ip: "{{ s2i_content_provider_registry_ip }}"
-      # Heat is not part of the default control plane, so enable it during
-      # edpm_prepare (same phase where s2i injects its container images) so
-      # the mapped s2i heat images (heat/heat-api, heat/heat-engine) actually
-      # get deployed. Mirrors heat-operator's ci/tempest/ci_fw_vars.yaml.
+      # Heat and Ironic is not part of the default control plane, so enable
+      # it during edpm_prepare (same phase where s2i injects its container
+      # images) so the mapped s2i heat images (heat/heat-api, heat/heat-engine)
+      # and ironic images (ironic/ironic-api, ironic/ironic-conductor,
+      # ironic/ironic-graphical-console) actually get deployed.
+      # Mirrors heat-operator's ci/tempest/ci_fw_vars.yaml.
       cifmw_edpm_prepare_kustomizations:
         - apiVersion: kustomize.config.k8s.io/v1beta1
           kind: Kustomization
@@ -183,6 +186,8 @@
                   name: unused
                 spec:
                   heat:
+                    enabled: true
+                  ironic:
                     enabled: true
               target:
                 kind: OpenStackControlPlane

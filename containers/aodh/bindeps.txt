@@ -5,3 +5,6 @@ python3-cryptography-43.0.0-4.el10
 httpd
 mod_ssl
 python3-mod_wsgi
+# Required for lxml
+libxml2
+libxslt

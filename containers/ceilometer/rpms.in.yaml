@@ -15,7 +15,9 @@ packages:
   - git-core
   - ipmitool
   - libffi-devel
+  - libxml2
   - libxml2-devel
+  - libxslt
   - libxslt-devel
   - openssl-devel
   - python3

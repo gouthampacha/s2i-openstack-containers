@@ -21,7 +21,9 @@ packages:
   - iscsi-initiator-utils
   - libffi-devel
   - libvirt-client
+  - libxml2
   - libxml2-devel
+  - libxslt
   - libxslt-devel
   - mod_ssl
   - nfs-utils

@@ -19,3 +19,6 @@ podman
 procps-ng
 tcpdump
 which
+# Required for lxml
+libxml2
+libxslt

@@ -18,7 +18,9 @@ packages:
   - iproute
   - iputils
   - libffi-devel
+  - libxml2
   - libxml2-devel
+  - libxslt
   - libxslt-devel
   - net-tools
   - nmap-ncat

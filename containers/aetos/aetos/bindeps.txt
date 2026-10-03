@@ -3,3 +3,6 @@ python3-pip
 httpd
 mod_ssl
 python3-mod_wsgi
+# Required for lxml
+libxml2
+libxslt

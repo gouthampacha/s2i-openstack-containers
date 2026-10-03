@@ -16,3 +16,6 @@ python3-mod_wsgi
 # dnsmasq container uses neutron-server image, pull required deps
 dnsmasq
 dnsmasq-utils
+# Required for lxml
+libxml2
+libxslt
