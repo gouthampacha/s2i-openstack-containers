@@ -14,7 +14,7 @@ jinja2==3.1.6
 jsonschema==4.26.0
 jsonschema-specifications==2025.9.1
 keystoneauth1==5.17.0
-keystonemiddleware==13.0.1
+keystonemiddleware==13.0.2
 mako==1.4.1
 markupsafe==3.0.3
 microversion-parse==2.1.0
@@ -29,7 +29,7 @@ oslo-config==10.7.0
 oslo-context==6.5.0
 oslo-db==18.1.1
 oslo-i18n==6.9.0
-oslo-log==8.3.1
+oslo-log==8.3.2
 oslo-middleware==8.2.0
 oslo-policy==6.0.1
 oslo-serialization==5.11.0
